@@ -1,11 +1,10 @@
-import os, time, random, subprocess, config
+import os, time, random, subprocess
 from operations import *
 def CMDinterp(interpret):
 	if(interpret == '.help'):
 		print('.help - help')
 		print('bos.clear - clears screen')
 		print('bos - mini info screen')
-		print('.reboot - reboot OS')
 		print('print <input> - prints what is inputted by the user')
 		print('pyexec <input> - executes python code in input')
 	elif(interpret == 'bos.clear'):
@@ -18,7 +17,6 @@ def CMDinterp(interpret):
 		print('version 1.1')
 		print('can be used as a template for another OS.')
 		print('use .help for help')
-	elif(interpret == '.reboot'): config.StartSystem()
 	elif(interpret[0:5] == 'print' or interpret[0:5] == 'PRINT'):
 		print(interpret[6:len(interpret)])
 	elif(interpret[0:6] == 'pyexec' or interpret[0:6] == 'PYEXEC'):
