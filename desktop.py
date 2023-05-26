@@ -20,7 +20,7 @@ def CMDinterp(interpret):
 	elif(interpret[0:5] == 'print' or interpret[0:5] == 'PRINT'):
 		print(interpret[6:len(interpret)])
 	elif(interpret[0:6] == 'pyexec' or interpret[0:6] == 'PYEXEC'):
-		if(not interpret == 'pyexec quit()'):
+		if(not interpret == 'pyexec quit()' and not interpret == 'pyexec exit()'):
 			try:
 				exec(interpret[7:len(interpret)])
 			except:
