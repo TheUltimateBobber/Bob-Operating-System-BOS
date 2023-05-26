@@ -20,11 +20,13 @@ def CMDinterp(interpret):
 	elif(interpret[0:5] == 'print' or interpret[0:5] == 'PRINT'):
 		print(interpret[6:len(interpret)])
 	elif(interpret[0:6] == 'pyexec' or interpret[0:6] == 'PYEXEC'):
-		try:
-			exec(interpret[7:len(interpret)])
-		except:
-			print('Error in python code')
-			print('Type: ' + str(Exception))
+		if(not interpret == 'pyexec quit()'):
+			try:
+				exec(interpret[7:len(interpret)])
+			except:
+				print('Error in python code')
+				print('Type: ' + str(Exception))
+		else: print('You cannot execute this command!')
 	elif(interpret == 'add'):
 		firstnum=float(input('First Number:' ))
 		secondnum=float(input('Second Number:'))
@@ -44,4 +46,4 @@ def run():
 		try:
 			CMDinterp(input('bos > '))
 		except:
-			continue
+			print('BOS: exception: ' + str(Exception))
