@@ -28,6 +28,7 @@ def CMDinterp(interpret):
 	elif(interpret == 'add'):
 		firstnum=float(input('First Number:' ))
 		secondnum=float(input('Second Number:'))
+		print(str(firstnum) + ' + ' + str(secondnum) + ' = ' + str(firstnum+secondnum))
 	else: print('unknown command')
 def LineEmpty():
 	print('                                            ' * 2000)
