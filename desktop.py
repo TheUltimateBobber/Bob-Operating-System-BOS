@@ -25,6 +25,9 @@ def CMDinterp(interpret):
 		except:
 			print('Error in python code')
 			print('Type: ' + str(Exception))
+	elif(interpret == 'add'):
+		firstnum=float(input('First Number:' ))
+		secondnum=float(input('Second Number:'))
 	else: print('unknown command')
 def LineEmpty():
 	print('                                            ' * 2000)
