@@ -41,4 +41,7 @@ def run():
 	print('use lowercase')
 	print('.help for help')
 	while True:
-		CMDinterp(input('bos > '))
+		try:
+			CMDinterp(input('bos > '))
+		except:
+			continue
