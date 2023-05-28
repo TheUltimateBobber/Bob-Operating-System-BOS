@@ -14,7 +14,7 @@ def CMDinterp(interpret):
 	elif(interpret == 'bos' or interpret == 'BOS'):
 		print('Bob Operating System (BOS)')
 		print('created in 2022')
-		print('version 1.1')
+		print('version 1.12')
 		print('can be used as a template for another OS.')
 		print('use .help for help')
 	elif(interpret[0:5] == 'print' or interpret[0:5] == 'PRINT'):
